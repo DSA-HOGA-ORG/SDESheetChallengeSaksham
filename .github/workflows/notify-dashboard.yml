@@ -1,0 +1,20 @@
+name: Notify Dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger dashboard refresh
+        env:
+          GH_TOKEN: ${{ secrets.DASHBOARD_TRIGGER_TOKEN }}
+        run: |
+          gh workflow run update-dashboard.yml \
+            --repo DSA-HOGA-ORG/striver-180-dashboard \
+            --ref main \
+            && echo "dashboard refresh dispatched" \
+            || echo "dashboard dispatch failed (see secret DASHBOARD_TRIGGER_TOKEN)"
