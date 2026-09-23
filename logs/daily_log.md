@@ -1,49 +1,45 @@
-# Striver's 180 SDE Sheet — Daily Log
+# Striver's 45-Day SDE Challenge — Daily Log
 
-> Total days: **00 / 180**
-> Total problems solved: **0**
-
----
-
-## Day 01 — Wednesday, 23 Sep 2026
-
-**Topic:** — (Arrays)
-**Subtopic:** —
-**Problems solved:** 0
-**Total time spent:** —
-
-### Summary
-<!-- One or two lines on how the day went. -->
-
----
+> Total days: **00 / 45**
+> Total problems solved: **0 / 180**
 
 <!--
 HOW TO USE THIS LOG:
-- Copy the daily block below for each new day and fill it in.
-- Update the counters at the top every day.
-- Append new days at the bottom, always keeping the most recent day last.
+Run helpers from the repo root:
 
----
-## Day 02 — <Day>, <Date>
+    python log.py status
+    python log.py add --name "Two Sum" --topic Arrays --subtopic LinearScan \
+        --language python --method twoSum --time 45m \
+        --complexity "O(n) / O(n)" --approach "hash map for lookup" \
+        --mistakes "..." --learned "..." --next "..."
+    python log.py commit [--push]
 
-**Topic:** —
-**Subtopic:** —
-**Problems solved:** 0
-**Total time spent:** —
+The script opens/creates today's day block, appends the problem entry, and
+updates every counter (days, problems solved, per-day time spent) automatically.
+
+Day block:
+## Day NN — Weekday, DD Mon YYYY
+
+**Topic:** ...
+**Subtopic:** ...
+**Problems solved:** n
+**Total time spent:** 1h 05m
 
 ### Summary
+One or two lines on how the day went.
 
-### Problem: _Problem Name_
-- **Link:** [LeetCode](https://leetcode.com/problems/) | [Solution](../<Topic>/<Subtopic>/)
-- **Status:** ☐ Solved | ☐ Unsolved | ☐ Need Review
-- **Time taken:** —
+Problem block (logged under its day):
+### Problem: Name
+- **Link:** [LeetCode](https://leetcode.com/problems/<name>/) | [Solution](../Topic/Subtopic/Module.py)
+- **Status:** Solved | Unsolved | Need Review
+- **Time taken:** 45m
 - **Approach:**
-  - <!-- What technique/heuristic did you use? -->
-- **Complexity:** Time O(?) / Space O(?)
+  - Technique / heuristic used
+- **Complexity:** Time O(n) / Space O(n)
 - **Mistakes made:**
-  - <!-- Edge cases missed, syntax slips, wrong initial idea... -->
+  - Edge cases missed, slips, wrong initial idea
 - **What I learned:**
-  - <!-- Pattern recognized, takeaway -->
+  - Pattern recognized, takeaway
 - **Next steps:**
-  - <!-- Revisit blindly, try the follow-up, think of a new approach... -->
+  - Revisit blindly, follow-up, alternate approach
 -->
